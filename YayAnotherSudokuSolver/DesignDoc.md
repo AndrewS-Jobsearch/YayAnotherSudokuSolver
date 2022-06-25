@@ -89,3 +89,10 @@ Example Output:
       2. If guess returns answer, add "guesses required" from the guess to my own "guesses required".
 
 5. Return solution (eventually, configurable, for now pretty print).
+
+---
+
+Ideas for expansion:
+
+* "hint" mode - return 1 cell
+* "hint" mode 2 - return the coordinate of the first found cell
