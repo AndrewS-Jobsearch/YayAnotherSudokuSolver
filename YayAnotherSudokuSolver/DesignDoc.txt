@@ -1,0 +1,59 @@
+﻿Sudoku Solver
+
+Rules of Sudoku:
+
+    1. Each row, column, and (small) box must
+       contain the numbers 1-9 exactly once.
+
+    2. No deleting the original puzzle's boxes!
+
+    3. A well-designed puzzle may not require "guess & check"
+       Every cell may be logically deduced from existing cells.
+
+    4. A well-designed puzzle has exactly one solution.
+
+(this solver should also work, at least optionally,
+ for puzzles that are not well-designed)
+
+---
+
+Example Input:
+
+┌───┬───┬───┐
+│4 9│ 1 │8 3│
+│   │  9│24 │
+│   │   │  1│
+├───┼───┼───┤
+│39 │274│6  │
+│   │ 5 │   │
+│  2│163│ 59│
+├───┼───┼───┤
+│5  │   │   │
+│ 13│6  │   │
+│9 8│ 2 │1 7│
+└───┴───┴───┘
+
+Using this format, for ease of machine import:
+409010803000009240000000001390274600000050000002163059500000000013600000908020107
+
+---
+
+Example Output:
+┌───┬───┬───┐
+│429│516│873│
+│851│739│246│
+│637│482│591│
+├───┼───┼───┤
+│395│274│618│
+│164│958│732│
+│782│163│459│
+├───┼───┼───┤
+│576│891│324│
+│213│647│985│
+│948│325│167│
+└───┴───┴───┘
+
+0 guesses required!
+
+---
+
